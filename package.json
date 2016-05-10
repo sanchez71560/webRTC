@@ -1,0 +1,27 @@
+{
+  "name": "despliegue-de-servicios-multimedia-webrtc",
+  "version": "0.2.5",
+  "description": "Despliegue de app de ejemplo con WebRTC",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+	"webrtc"
+  ],
+  "license": "MIT"
+}
