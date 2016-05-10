@@ -1,7 +1,7 @@
 {
   "name": "Nuestro primer despliegue en Heroku",
   "description": "Nuestro primer despliegue en Heroku, en la asignatura de Despliegue de servicios multimedia",
-  "repository": "https://github.com/heroku/node-js-getting-started",
+  "repository": "https://github.com/markogalarza/webrtc-ejercicio-dsm",
   "logo": "http://node-js-sample.herokuapp.com/node.svg",
   "keywords": ["node", "express", "webrtc", "heroku"],
   "image": "heroku/nodejs"
