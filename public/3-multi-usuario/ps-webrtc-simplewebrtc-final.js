@@ -30,10 +30,15 @@ window.onload = function () {
 	// Set the room name
 	function setRoom(name) {
         $('form').remove();
-        $('h1').text('Welcome to room: ' + name);
-        $('#subTitle').text('Share this link to have friends join you:');
-        $('#roomLink').text(location.href);
-        $('body').addClass('active');
+        $('h2').text('Welcome to ' + name.toUpperCase());
+        var mivideo = $('#localVideo');
+        $('.mivideo').append(mivideo);
+        $('#localVideo').addClass("me");
+
+        $('.link').text('Share this link to have friends join you: ');
+        $('.negrita').text(location.href);
+        
+
     }
 
     // If there's a room, show it in the UI
@@ -53,28 +58,5 @@ window.onload = function () {
     	});
     }
    
-
-
-	// Extra credit! Hook up screenshare button
-	var button = $('#screenShareButton'),
-        setButton = function (bool) {
-            button.text(bool ? 'share screen' : 'stop sharing');
-        };
-
-        setButton(true);
-
-        if (!webrtc.screenSharingSupport) {
-            button[0].disabled = true;
-        } else {
-            button.click(function () {
-                if (webrtc.localScreen) {
-                    webrtc.stopScreenShare();
-                    setButton(true);
-                } else {
-                    webrtc.shareScreen();
-                    setButton(false);
-                }
-        });
-    }
 }
         
